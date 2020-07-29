@@ -1,0 +1,16 @@
+<h2>Example#test</h2>
+<p>Find me in app/views/example/test.html.erb</p>
+<h2>First experiment with erb</h2>
+<p>Addition:
+<%= 1 + 1 %>
+</p>
+<p>Loop from 0 to 5:
+<% (0..5).each do |i| %>
+<%= "#{i}, " %>
+<% end %>
+</p>
+<p>The current time is 
+<%= @current_time %>
+</p>
+<%= render partial: "footer", locals: {start_year: '2000' } %>
+<%= render "footer" %>
